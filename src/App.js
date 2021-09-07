@@ -1,5 +1,6 @@
+import React  from 'react';
 import './App.css';
-import Nav from './Nav.jsx'
+import Nav from './Componentes/Nav/Nav.jsx'
 
 
 function App() {
