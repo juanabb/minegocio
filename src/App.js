@@ -1,18 +1,20 @@
 import React  from 'react';
 import './App.css';
 import Nav from './Componentes/Nav/Nav.jsx'
-
+import Header  from './Componentes/Header/Header';
+import ItemListContainer from './Componentes/ItemListContainer/ItemListContainer';
+import Footer from './Componentes/Footer/Footer';
 
 function App() {
   return (
     <div className="App">
       <Nav />
-      <header className="App-header">
-      
+      <ItemListContainer greeting='BIENVENIDE'/>
+      <Header titulo='Muy Pronto' subtitulo='500.000' />
         <p>
-          holis holisss
+          holis
         </p>
-      </header>
+        <Footer />
     </div>
   );
 }
