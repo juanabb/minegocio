@@ -4,18 +4,18 @@ import Nav from './Componentes/Nav/Nav.jsx'
 import Header  from './Componentes/Header/Header';
 import ItemListContainer from './Componentes/ItemListContainer/ItemListContainer';
 import Footer from './Componentes/Footer/Footer';
-
 function App() {
   return (
-    <div className="App">
-      <Nav />
-      <ItemListContainer greeting='BIENVENIDE'/>
-      <Header titulo='Muy Pronto' subtitulo='500.000' />
-        <p>
+    <>
+      <Nav className='Nav'/>      
+      <ItemListContainer greeting='BIENVENIDE' className='Container'/>
+      <Header titulo='Muy Pronto' subtitulo='algo muy copado esta viniendo..' className='Header'/>
+        <div className='central'>
           holis
-        </p>
-        <Footer />
-    </div>
+        </div>
+
+      <Footer className='Footer'/>
+    </>
   );
 }
 

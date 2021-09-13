@@ -1,4 +1,8 @@
-.App{
+body{
   text-align: center;
-  background-color:whitesmoke ;
+}
+
+.central{
+  height: 400px;
+  
 }

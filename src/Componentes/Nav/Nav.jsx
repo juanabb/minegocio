@@ -5,8 +5,8 @@ const Nav=() => {
     return(
         <nav className='topnav'>   
         <a href="#">Inicio</a>
-        <a href="#">Contacto</a>
         <a href="#">Quienes somos</a>
+        <a href="#">Contacto</a>
         <CartWidget className='logo' /> 
         </nav>
     )
