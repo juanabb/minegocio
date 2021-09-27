@@ -7,7 +7,7 @@ import './icono.css'
 const CartWidget = () => {
     return (
         <div className='icono'>
-            <Link to='/cart'>
+            <Link to='/carrito'>
             <Icon name='cart arrow down' size='huge' />
             <span className='number'>0</span>
             </Link>

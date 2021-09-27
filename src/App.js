@@ -4,9 +4,9 @@ import Nav from './Componentes/Nav/Nav.jsx'
 import Header  from './Componentes/Header/Header';
 import ItemListContainer from './Componentes/ItemListContainer/ItemListContainer';
 import Footer from './Componentes/Footer/Footer';
-import CartWidget from './Componentes/CartWidget/CartWidget'
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import ItemDetailContainer from './Componentes/ItemDetailContainer/ItemDetailContainer';
+import producto from './Componentes/producto/producto';
 function App() {
 
 
@@ -14,15 +14,14 @@ function App() {
     <> 
       <BrowserRouter> 
         <Nav className='Nav'/> 
+        <Header titulo='Muy Pronto' subtitulo='algo muy copado esta viniendo..' className='Header'/>
 
         <Switch>
         <Route path='/' component={ItemListContainer} exact/>
-        <Route path='/productos' component={Nav} />
-        <Route path='/cart' component={CartWidget} />
+        <Route path='/productos' component={ItemDetailContainer} exact/>
+        <Route path='/producto' component={producto} exact/>
+ 
         </Switch>    
-
-        <Header titulo='Muy Pronto' subtitulo='algo muy copado esta viniendo..' className='Header'/>
-        <ItemDetailContainer />
         <Footer className='Footer'/>
         </BrowserRouter>
     </>
