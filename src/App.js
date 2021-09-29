@@ -7,7 +7,7 @@ import Footer from './Componentes/Footer/Footer';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import ItemDetailContainer from './Componentes/ItemDetailContainer/ItemDetailContainer';
 import carrito from './Componentes/carrito/carrito';
-import producto from './Componentes/Producto/producto';
+import Producto from './Componentes/Producto/Producto';
 
 function App() {
 
@@ -21,7 +21,7 @@ function App() {
         <Switch>
         <Route path='/' component={ItemListContainer} exact/>
         <Route path='/productos' component={ItemDetailContainer} exact/>
-        <Route path='/item/:id' component={producto}exact />
+        <Route path='/item/:id' component={Producto}exact />
         <Route path='/carrito' component={carrito} exact/>
         </Switch>    
         <Footer className='Footer'/>
