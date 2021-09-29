@@ -1,11 +1,14 @@
 import React from 'react'
 import { Card, Image } from 'semantic-ui-react'
-  import ItemCount from '../ ItemCount/ ItemCount'
+import ItemCount from '../ ItemCount/ ItemCount'
 
-const ItemDetail = ({name, price, img, description, stock}) => {
-    return (
+const ItemDetail = ({name, price, img, description, stock,id}) => {
+    
+  let path = '/';
+
+  return (
         <div>
-           <Card>
+           <Card key={id}>
     <Image src={img} wrapped ui={false} />
     <Card.Content>
       <Card.Header>{name}</Card.Header>

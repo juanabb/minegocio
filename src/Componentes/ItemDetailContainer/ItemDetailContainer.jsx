@@ -1,8 +1,10 @@
 import React from 'react'
 import ItemDetail from '../ItemDetail/ItemDetail'
+import { useParams } from 'react-router'
 
 const ItemDetailContainer = () => {
 
+  const { id } = useParams();
 
     return (
         <>
@@ -10,6 +12,7 @@ const ItemDetailContainer = () => {
         <div className='row'>
         <div classname='col-sm-3'>
             <ItemDetail name="Fuego" 
+            id='5'
       price="$480" 
       description="Tenica Desconocida"
       stock= '10'
@@ -22,6 +25,7 @@ const ItemDetailContainer = () => {
       price="$899" 
       description="Data del 2200 A.C."
       stock= '10'
+      id='4'
       initial ='1'
       img="https://mascotafiel.com/wp-content/uploads/2016/08/los-gatos-en-el-antiguo-egipto.jpg"/>
 
@@ -29,6 +33,7 @@ const ItemDetailContainer = () => {
         <div classname='col-sm-3'>
       <ItemDetail name="Esfera Verde" 
       price="$550" 
+      id='1'
       description="Mineral Natural"
       stock= '10'
       initial ='1'
@@ -38,6 +43,7 @@ const ItemDetailContainer = () => {
         <div classname='col-sm-3'>
       <ItemDetail name="Mineral" 
       price="$999" 
+      id='3'
       description="Mineral"
       stock= '10'
       initial ='1'
@@ -47,6 +53,7 @@ const ItemDetailContainer = () => {
         <div classname='col-sm-3'>
       <ItemDetail name="Cuadro Universa" 
       price="$666" 
+      id='2'
       description="Data del 500 D.C."
       stock= '10'
       initial ='1'
