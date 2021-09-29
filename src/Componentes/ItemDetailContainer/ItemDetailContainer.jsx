@@ -1,11 +1,9 @@
 import React from 'react'
 import ItemDetail from '../ItemDetail/ItemDetail'
-import { useParams } from 'react-router'
 
 const ItemDetailContainer = () => {
 
-  const { id } = useParams();
-
+    
     return (
         <>
         <div className='container'>

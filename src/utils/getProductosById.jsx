@@ -1,6 +1,5 @@
-import {productosIniciales} from "../Componentes/ItemListContainer/ItemListContainer";
 
-export const getProductosById = (id) => {
+export const getProductosById = ({id,productosIniciales}) => {
 
     return productosIniciales.find(productos => productos.id === id);
         }
