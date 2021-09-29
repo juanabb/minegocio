@@ -1,14 +1,14 @@
 import React from 'react'
 import { useParams } from 'react-router'
+import { getProductosById } from "../../utils/getProductosById";
 
-
-const producto = ({productos}) => {
-    const {id} = useParams
+const producto = () => {
+    const {id} = useParams()
+    const prod=getProductosById(id)
     return (
         <div>
-            <h1>numero={id}</h1>
-            <p>{productos}</p>
-
+            <h1>numero={prod.id}</h1>
+            <p>{prod.titulo}</p>
         </div>
     )
 }
