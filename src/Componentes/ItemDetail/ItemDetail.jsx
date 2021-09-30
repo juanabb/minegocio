@@ -13,7 +13,6 @@ const ItemDetail = ({name, price, img, description, stock,id}) => {
     <Card.Content>
       <Card.Header>{name}</Card.Header>
       <Card.Meta>
-        <span>{id}</span>
         <span className='date'>{price}</span>
       </Card.Meta>
       <Card.Description>

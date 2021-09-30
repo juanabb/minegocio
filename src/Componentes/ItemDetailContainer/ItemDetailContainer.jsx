@@ -3,18 +3,19 @@ import ItemDetail from '../ItemDetail/ItemDetail'
 
 const ItemDetailContainer = () => {
 
-    
+
+  
     return (
         <>
         <div className='container'>
         <div className='row'>
         <div classname='col-sm-3'>
-            <ItemDetail name="Fuego" 
-      price="$480" 
+            <ItemDetail name='Fuego' 
+      price='$480' 
       description="Tenica Desconocida"
       stock= '10'
       initial='1'
-      img="https://pm1.narvii.com/7411/7595dab5c73633cfa02deb20c4321e2dac6ac96br1-259-207v2_hq.jpg"/>
+      img='https://pm1.narvii.com/7411/7595dab5c73633cfa02deb20c4321e2dac6ac96br1-259-207v2_hq.jpg'/>
       </div>
       <div classname='col-sm-3'>
       
